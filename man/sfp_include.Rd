@@ -2,9 +2,12 @@
 % Please edit documentation in R/include.R
 \name{sfp_include}
 \alias{sfp_include}
+\alias{sfp_lib}
 \title{Include fullPage.js library}
 \usage{
 sfp_include(cdn = TRUE)
+
+sfp_lib(cdn = TRUE)
 }
 \arguments{
 \item{cdn}{Boolean indicate whether to pull files from CDN}

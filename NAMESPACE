@@ -2,6 +2,7 @@
 
 export(sfp_fullpage)
 export(sfp_include)
+export(sfp_lib)
 export(sfp_section)
 export(sfp_slide)
 importFrom(jsonlite,toJSON)

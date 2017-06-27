@@ -3,7 +3,8 @@ Title: Wrapper for 'fullpage.js' library
 Version: 0.0.0.9000
 Authors@R: c(
   person("Carl","Ganz", role = c("aut", "cre"), email = "carlganz@gmail.com"),
-  person("CannaData Solutions", role = "cph")
+  person("CannaData Solutions", role = "cph"),
+  person("Alvaro", "Trigo", role = c("ctb", "cph"), comment = "fullpage.js in javascript/fullpage.js")
   )
 Description: Create fullscreen scrolling websites in 'Shiny'
   using the `fullpage.js' library.
