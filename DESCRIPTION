@@ -8,7 +8,6 @@ Authors@R: c(
   )
 Description: Create fullscreen scrolling websites in 'Shiny'
   using the `fullpage.js' library.
-Depends: R (>= 3.4.0)
 Import: shiny, jsonlite, htmltools
 License: MIT + file LICENSE
 Encoding: UTF-8
