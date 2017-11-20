@@ -9,9 +9,7 @@
 #'
 
 sfp_fullpage <- function(id, ..., options = NULL) {
-  stopifnot(all(vapply(list(...), function(x) {
-    x$name == "div" && x$attribs$class == "section"
-  }, logical(1))))
+ 
   call <- match.call()
   call[[1]] <-  htmltools::div
   shiny::tagList(shiny::tags$script(shiny::HTML(paste0(
