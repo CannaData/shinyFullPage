@@ -14,13 +14,13 @@ sfp_fullpage <- function(id, ..., options = NULL) {
   }, logical(1))))
   call <- match.call()
   call[[1]] <-  htmltools::div
-  shiny::tagList(shiny::tags$script(paste0(
+  shiny::tagList(shiny::tags$script(shiny::HTML(paste0(
     "$(document).ready(function() {",
     "$('#", id, "').fullpage(",
     jsonlite::toJSON(options)
     , ");",
     "})"
-  )),
+  ))),
   eval(call, parent.frame()))
 }
 
