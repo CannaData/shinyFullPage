@@ -28,7 +28,7 @@ sfp_fullpage <- function(id, ..., options = NULL) {
 
 sfp_section <- function(...) {
   call <- match.call()
-  call$class <- c("section", call$class)
+  call$class <- paste("section", call$class)
   call[[1]] <-  htmltools::div
   eval(call, parent.frame())
 }
@@ -39,7 +39,7 @@ sfp_section <- function(...) {
 
 sfp_slide <- function(...) {
   call <- match.call()
-  call$class <- c("slide", call$class)
+  call$class <- paste("slide", call$class)
   call[[1]] <-  htmltools::div
   eval(call, parent.frame())
 }
